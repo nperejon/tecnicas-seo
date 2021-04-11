@@ -1,0 +1,17 @@
+Allow indexing of everything
+User-agent: *
+Disallow:
+
+Disallow indexing of everything
+User-agent: *
+Disallow: /
+
+Disallow indexing of a specific folder
+User-agent: *
+Disallow: /folder/
+
+Disallow Google bot from indexing of a folder, 
+except for allowing the indexing of one file in that folder
+User-agent: Googlebot
+Disallow: /folder1/
+Allow: /folder1/myfile.html
